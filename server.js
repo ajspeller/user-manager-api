@@ -16,6 +16,8 @@ const userController = require('./controllers/UserController');
 
 app.post('/api/user/create', userController.create);
 app.put('/api/user/update', userController.update);
+app.get('/api/user/retrieve', userController.retrieve);
+app.delete('/api/user/remove', userController.remove);
 
 app.listen(PORT, () => {
   debug(`Webserver started successfully on port ${PORT}`);

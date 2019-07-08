@@ -24,3 +24,16 @@ Content-Type: application/json
   "team": "software engineers",
   "email": "ajspeller"
 }
+
+###
+
+GET http://localhost:3000/api/user/retrieve HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/user/remove HTTP/1.1
+Content-Type: application/json
+
+{
+  "_id": "5d22ac39ace82240bab5db65"
+}
